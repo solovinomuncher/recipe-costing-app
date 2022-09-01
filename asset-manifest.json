@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/recipe-costing-app/static/css/main.073c9b0a.css",
+    "main.js": "/recipe-costing-app/static/js/main.8b8fa055.js",
+    "static/js/787.2649be48.chunk.js": "/recipe-costing-app/static/js/787.2649be48.chunk.js",
+    "index.html": "/recipe-costing-app/index.html",
+    "main.073c9b0a.css.map": "/recipe-costing-app/static/css/main.073c9b0a.css.map",
+    "main.8b8fa055.js.map": "/recipe-costing-app/static/js/main.8b8fa055.js.map",
+    "787.2649be48.chunk.js.map": "/recipe-costing-app/static/js/787.2649be48.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.8b8fa055.js"
+  ]
+}
