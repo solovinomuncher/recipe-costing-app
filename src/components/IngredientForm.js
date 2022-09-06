@@ -1,4 +1,4 @@
-// import "./App.css";
+import "../App.css";
 
 function IngredientForm(props) {
   const recipe = props.recipe;
@@ -6,9 +6,9 @@ function IngredientForm(props) {
   const ingredientNumber = "ingredient" + props.ingredientNumber;
 
   return (
-    <div>
-      <h3>{ingredientNumber}</h3>
-      <p>
+    <div className="ingredient-form">
+      <h3>Ingredient #{props.ingredientNumber}</h3>
+      <p className="form__ingredient-inputs">
         <label>Name</label>
         <input
           type="text"
@@ -27,7 +27,7 @@ function IngredientForm(props) {
           }
         />
       </p>
-      <p>
+      <p className="form__ingredient-inputs">
         <label>Qty #</label>
         <input
           type="number"
@@ -46,7 +46,7 @@ function IngredientForm(props) {
           }
         />
       </p>
-      <p>
+      <p className="form__ingredient-inputs">
         <label>Unit</label>
         <select
           value={recipe.ingredients[ingredientNumber].unit}
@@ -74,7 +74,7 @@ function IngredientForm(props) {
           </optgroup>
         </select>
       </p>
-      <p>
+      <p className="form__ingredient-inputs">
         <label>Bulk Qty #</label>
         <input
           type="number"
@@ -93,8 +93,8 @@ function IngredientForm(props) {
           }
         />
       </p>
-      <p>
-        <label htmlFor="bulkUnit-1">Unit</label>
+      <p className="form__ingredient-inputs">
+        <label htmlFor="bulkUnit-1">Bulk Unit</label>
         <select
           name="bulkUnit"
           id="bulkUnit-1"
@@ -123,7 +123,7 @@ function IngredientForm(props) {
           </optgroup>
         </select>
       </p>
-      <p>
+      <p className="form__ingredient-inputs">
         <label htmlFor="bulkCost-1">Bulk Cost $</label>
         <input
           name="bulkCost-1"

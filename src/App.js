@@ -135,11 +135,13 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Recipe Costing App</h1>
+      <header>
+        <h1>Recipe Costing App</h1>
+      </header>
       <form onSubmit={(e) => handleSubmit(e)}>
         <fieldset>
           <legend>Recipe Basics</legend>
-          <p>
+          <p className="form__ingredient-inputs">
             <label htmlFor="recipe-name">Recipe Name</label>
             <input
               name="recipe-name"
@@ -159,13 +161,19 @@ function App() {
           <legend>Recipe Ingredients</legend>
           {children}
         </fieldset>
-        <input type="submit" />
+        {/* <input type="submit" /> */}
+        <button className="form__submit-btn">Submit</button>
       </form>
-      <button onClick={() => addIngredient()}>Add Ingredient</button>
+      <button className="form__submit-btn" onClick={() => addIngredient()}>
+        Add Ingredient
+      </button>
       <div className="recipe-costing-results">
-        <h3>{recipe.recipeName}</h3>
+        <h3>{recipe.recipeName || "Recipe Name"}</h3>
         <p>Total Recipe Cost: ${recipe.recipeCost}</p>
       </div>
+      <footer>
+        <small>Copyright by Erick Esqueda. All Rights Reserved.</small>
+      </footer>
     </div>
   );
 }
